@@ -1,13 +1,13 @@
 /* Establish the portfolio color, spacing, and sizing system. */
 :root {
   color-scheme: light;
-  --color-bg: #f5f7f2;
-  --color-surface: #e9eee5;
-  --color-text: #172019;
-  --color-muted: #526052;
-  --color-accent: #3e6c19;
+  --color-bg: #f2f9fc;
+  --color-surface: #e3f2f8;
+  --color-text: #132b38;
+  --color-muted: #4c6673;
+  --color-accent: #006b91;
   --color-on-accent: #ffffff;
-  --color-border: rgba(23, 32, 25, 0.2);
+  --color-border: rgba(19, 43, 56, 0.18);
   --space-1: 0.35rem;
   --space-2: 0.65rem;
   --space-3: 1rem;
@@ -311,7 +311,7 @@ button:focus-visible {
 .status-dot {
   background: var(--color-accent);
   border-radius: 50%;
-  box-shadow: 0 0 12px rgba(195, 243, 107, 0.5);
+  box-shadow: 0 0 12px rgba(0, 107, 145, 0.35);
   display: inline-block;
   height: 0.45rem;
   margin-right: var(--space-1);
@@ -539,7 +539,7 @@ button:focus-visible {
 }
 
 .skills-grid li:hover {
-  background: rgba(195, 243, 107, 0.08);
+  background: rgba(0, 107, 145, 0.08);
   border-color: var(--color-accent);
 }
 
@@ -584,7 +584,7 @@ button:focus-visible {
 }
 
 .project-card:hover {
-  border-color: rgba(195, 243, 107, 0.45);
+  border-color: rgba(0, 107, 145, 0.45);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25);
   transform: translateY(-5px);
 }
@@ -600,21 +600,21 @@ button:focus-visible {
 }
 
 .project-art-one {
-  background: #a4ac8c;
+  background: #80c4df;
 }
 
 .project-art-two {
-  background: #bd8069;
+  background: #a9d8e9;
 }
 
 .project-art-three {
-  background: #838b73;
+  background: #5faccd;
 }
 
 .art-window {
-  background: #f5f2e9;
+  background: #f2f9fc;
   box-shadow: 0 12px 30px rgba(20, 25, 16, 0.2);
-  color: #24281e;
+  color: #132b38;
   height: 72%;
   padding: var(--space-2) var(--space-3);
   position: relative;
@@ -622,7 +622,7 @@ button:focus-visible {
 }
 
 .art-window i {
-  background: #ef9b79;
+  background: #3e94ba;
   border-radius: 50%;
   display: inline-block;
   height: 0.32rem;
@@ -631,11 +631,11 @@ button:focus-visible {
 }
 
 .art-window i:nth-child(2) {
-  background: #e9c85d;
+  background: #e1aa46;
 }
 
 .art-window i:nth-child(3) {
-  background: #8cbd79;
+  background: #79b4d2;
 }
 
 .art-window b {
@@ -646,7 +646,7 @@ button:focus-visible {
 }
 
 .art-window em {
-  background: #dedfd3;
+  background: #d5e8ef;
   display: block;
   height: 0.2rem;
   margin-top: 0.3rem;
@@ -658,8 +658,8 @@ button:focus-visible {
 }
 
 .art-shop {
-  background: #f4e8d5;
-  color: #39291f;
+  background: #e4f2f8;
+  color: #173847;
   display: flex;
   flex-direction: column;
   height: 88%;
@@ -684,7 +684,7 @@ button:focus-visible {
 }
 
 .art-shop em {
-  border: 1px solid #39291f;
+  border: 1px solid #173847;
   font-size: 0.4rem;
   font-style: normal;
   letter-spacing: 0.08em;
@@ -694,9 +694,9 @@ button:focus-visible {
 }
 
 .art-task {
-  background: #f0efe7;
+  background: #f2f9fc;
   box-shadow: 0 12px 30px rgba(20, 25, 16, 0.2);
-  color: #31372c;
+  color: #173847;
   display: flex;
   flex-direction: column;
   gap: var(--space-2);
@@ -711,18 +711,18 @@ button:focus-visible {
 }
 
 .art-task b span {
-  color: #7c9a50;
+  color: #006b91;
 }
 
 .art-task i {
-  border-bottom: 1px solid #ddded4;
+  border-bottom: 1px solid #d5e8ef;
   font-size: 0.48rem;
   font-style: normal;
   padding-bottom: var(--space-1);
 }
 
 .art-task i:first-of-type {
-  color: #718848;
+  color: #006b91;
 }
 
 .project-meta {
@@ -834,10 +834,10 @@ button:focus-visible {
 
 .whatsapp-icon {
   align-items: center;
-  border: 1px solid rgba(17, 23, 19, 0.5);
+  border: 1px solid currentColor;
   border-radius: 50%;
   display: inline-flex;
-  font-size: 0.8rem;
+  flex: 0 0 1.4rem;
   height: 1.4rem;
   justify-content: center;
   width: 1.4rem;
@@ -1071,13 +1071,13 @@ button:focus-visible {
 @media (prefers-color-scheme: dark) {
   :root {
     color-scheme: dark;
-    --color-bg: #111713;
-    --color-surface: #1a231c;
-    --color-text: #f0f1e9;
-    --color-muted: #a4ada1;
-    --color-accent: #c3f36b;
-    --color-on-accent: #111713;
-    --color-border: rgba(240, 241, 233, 0.2);
+    --color-bg: #0e1b22;
+    --color-surface: #172a33;
+    --color-text: #eef8fc;
+    --color-muted: #adc1ca;
+    --color-accent: #6ecdf1;
+    --color-on-accent: #09212c;
+    --color-border: rgba(238, 248, 252, 0.2);
   }
 }
 
@@ -1161,9 +1161,10 @@ button:focus-visible {
 
 /* Anchor the home-page WhatsApp menu within the hero instead of the viewport. */
 .hero .whatsapp-widget {
-  bottom: var(--space-5);
+  bottom: calc(var(--space-5) + var(--space-2));
   position: absolute;
   right: var(--space-3);
+  z-index: 4;
 }
 
 .whatsapp-float {
