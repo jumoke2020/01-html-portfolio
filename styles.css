@@ -72,6 +72,15 @@ select {
   font: inherit;
 }
 
+/* Give native buttons a clear hover response that complements keyboard focus. */
+button {
+  transition: color 180ms ease, background-color 180ms ease, border-color 180ms ease;
+}
+
+button:hover {
+  color: var(--color-accent);
+}
+
 /* Keep headings fluid and establish a clear type hierarchy. */
 h1,
 h2,
@@ -1291,6 +1300,7 @@ button:focus-visible {
 }
 
 /* Identify the current page in the shared navigation. */
+/* Mark the current page so visitors can orient themselves in the shared nav. */
 .site-nav a[aria-current="page"] {
   color: var(--color-accent);
   text-decoration: underline;
