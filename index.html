@@ -7,12 +7,25 @@
       name="description"
       content="Meet Oluwatobi Olatunji, a front end designer and software developer creating thoughtful digital experiences."
     >
-    <meta name="theme-color" content="#111713">
+    <meta property="og:title" content="Mr T Initiatives — Oluwatobi Olatunji">
+    <meta
+      property="og:description"
+      content="Meet Oluwatobi Olatunji, a front end designer and software developer creating thoughtful digital experiences."
+    >
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#f5f7f2">
+    <meta name="theme-color" content="#111713" media="(prefers-color-scheme: dark)">
     <title>Mr T Initiatives — Oluwatobi Olatunji</title>
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%233e6c19'/%3E%3Ctext x='32' y='43' fill='%23ffffff' font-family='Arial,sans-serif' font-size='38' font-weight='700' text-anchor='middle'%3ET.%3C/text%3E%3C/svg%3E"
+    >
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="site-header">
       <a class="brand" href="#about" aria-label="Oluwatobi Olatunji home">
         <span class="brand-mark">T.</span>
@@ -30,7 +43,7 @@
       </nav>
     </header>
 
-    <main>
+    <main id="main-content" tabindex="-1">
       <section class="hero section-wrap" id="about" aria-labelledby="hero-title">
         <div class="hero-copy">
           <p class="eyebrow"><span class="status-dot"></span> AVAILABLE FOR OPPORTUNITIES</p>
@@ -46,7 +59,7 @@
           </div>
           <div class="hero-social">
             <span>FIND ME HERE</span>
-            <a href="https://github.com/Jumoke2020" target="_blank" rel="noreferrer">GITHUB ↗</a>
+            <a href="https://github.com/Jumoke2020" target="_blank" rel="noreferrer" aria-label="GitHub profile (opens in a new tab)">GITHUB ↗</a>
             <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LINKEDIN ↗</a>
           </div>
         </div>
@@ -54,10 +67,13 @@
           <div class="image-frame">
             <img
               src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&amp;fit=crop&amp;w=1200&amp;q=85"
+              srcset="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&amp;fit=crop&amp;w=640&amp;q=80 640w, https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&amp;fit=crop&amp;w=960&amp;q=80 960w, https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&amp;fit=crop&amp;w=1200&amp;q=85 1200w"
+              sizes="(min-width: 1100px) 480px, (min-width: 768px) 42vw, calc(100vw - 2rem)"
               alt="A bright workspace with a laptop and tools for building digital projects"
               width="1200"
               height="800"
               fetchpriority="high"
+              decoding="async"
             >
             <div class="image-caption"><span>DESIGNING WITH PURPOSE</span><span>✳</span></div>
           </div>
@@ -99,21 +115,21 @@
             <div class="project-meta"><span>01 / WEB DESIGN</span><span>HTML · CSS</span></div>
             <h3>Personal Portfolio</h3>
             <p>A personal corner of the internet for sharing my journey, skills, and work.</p>
-            <a href="https://github.com/Jumoke2020" target="_blank" rel="noreferrer" aria-label="View Personal Portfolio on GitHub">View project <span aria-hidden="true">↗</span></a>
+            <a href="https://github.com/Jumoke2020" target="_blank" rel="noreferrer" aria-label="Browse Jumoke2020's GitHub profile (opens in a new tab)">Browse GitHub profile <span aria-hidden="true">↗</span></a>
           </article>
           <article class="project-card">
             <div class="project-art project-art-two" aria-hidden="true"><span class="art-shop"><b>GOOD<br>THINGS.</b><i>thoughtfully made<br>for everyday living</i><em>SHOP THE COLLECTION ↗</em></span></div>
             <div class="project-meta"><span>02 / E-COMMERCE</span><span>JAVASCRIPT · CSS</span></div>
             <h3>Good Things Store</h3>
             <p>A warm, welcoming storefront concept for a modern independent goods brand.</p>
-            <a href="https://github.com/Jumoke2020" target="_blank" rel="noreferrer" aria-label="View Good Things Store on GitHub">View project <span aria-hidden="true">↗</span></a>
+            <a href="https://github.com/Jumoke2020" target="_blank" rel="noreferrer" aria-label="Browse Jumoke2020's GitHub profile (opens in a new tab)">Browse GitHub profile <span aria-hidden="true">↗</span></a>
           </article>
           <article class="project-card">
             <div class="project-art project-art-three" aria-hidden="true"><span class="art-task"><b>today<span>:</span></b><i>✳ Plan the next big thing</i><i>○ Build something useful</i><i>○ Take a well-earned break</i></span></div>
             <div class="project-meta"><span>03 / PRODUCTIVITY</span><span>NODE.JS · MYSQL</span></div>
             <h3>Everyday Tasks</h3>
             <p>A simple task manager concept for finding a little more focus in a busy day.</p>
-            <a href="https://github.com/Jumoke2020" target="_blank" rel="noreferrer" aria-label="View Everyday Tasks on GitHub">View project <span aria-hidden="true">↗</span></a>
+            <a href="https://github.com/Jumoke2020" target="_blank" rel="noreferrer" aria-label="Browse Jumoke2020's GitHub profile (opens in a new tab)">Browse GitHub profile <span aria-hidden="true">↗</span></a>
           </article>
         </div>
       </section>

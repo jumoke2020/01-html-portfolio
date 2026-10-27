@@ -1,11 +1,13 @@
 /* Establish the portfolio color, spacing, and sizing system. */
 :root {
-  color-scheme: dark;
-  --color-bg: #111713;
-  --color-surface: #1a231c;
-  --color-text: #f0f1e9;
-  --color-muted: #a4ada1;
-  --color-accent: #c3f36b;
+  color-scheme: light;
+  --color-bg: #f5f7f2;
+  --color-surface: #e9eee5;
+  --color-text: #172019;
+  --color-muted: #526052;
+  --color-accent: #3e6c19;
+  --color-on-accent: #ffffff;
+  --color-border: rgba(23, 32, 25, 0.2);
   --space-1: 0.35rem;
   --space-2: 0.65rem;
   --space-3: 1rem;
@@ -105,11 +107,29 @@ button:focus-visible {
   outline-offset: 4px;
 }
 
+/* Reveal a keyboard-only shortcut to the main landmark. */
+.skip-link {
+  background: var(--color-accent);
+  border-radius: var(--radius);
+  color: var(--color-on-accent);
+  left: var(--space-3);
+  padding: var(--space-2) var(--space-3);
+  position: fixed;
+  top: var(--space-2);
+  transform: translateY(calc(-100% - var(--space-2)));
+  z-index: 20;
+}
+
+.skip-link:focus {
+  color: var(--color-on-accent);
+  transform: translateY(0);
+}
+
 /* Center the page header and keep it available while scrolling. */
 .site-header {
   align-items: center;
   background: var(--color-bg);
-  border-bottom: 1px solid rgba(240, 241, 233, 0.12);
+  border-bottom: 1px solid var(--color-border);
   display: flex;
   height: 4.5rem;
   justify-content: space-between;
@@ -134,7 +154,7 @@ button:focus-visible {
   align-items: center;
   background: var(--color-accent);
   border-radius: 50%;
-  color: var(--color-bg);
+  color: var(--color-on-accent);
   display: inline-flex;
   flex-shrink: 0;
   font-size: 1.05rem;
@@ -188,7 +208,7 @@ button:focus-visible {
 .site-nav {
   align-items: stretch;
   background: var(--color-surface);
-  border-bottom: 1px solid rgba(240, 241, 233, 0.12);
+  border-bottom: 1px solid var(--color-border);
   display: flex;
   flex-direction: column;
   gap: 0;
@@ -214,14 +234,14 @@ button:focus-visible {
 }
 
 .site-nav > a:not(.nav-contact) {
-  border-bottom: 1px solid rgba(240, 241, 233, 0.12);
+  border-bottom: 1px solid var(--color-border);
   color: var(--color-muted);
   padding: var(--space-3) 0;
 }
 
 .nav-contact {
   align-self: flex-start;
-  border: 1px solid rgba(240, 241, 233, 0.2);
+  border: 1px solid var(--color-border);
   border-radius: 999px;
   margin-top: var(--space-2);
   padding: 0.55rem 0.9rem;
@@ -335,7 +355,7 @@ button:focus-visible {
 
 .hero-social {
   align-items: center;
-  border-top: 1px solid rgba(240, 241, 233, 0.12);
+  border-top: 1px solid var(--color-border);
   color: var(--color-muted);
   display: flex;
   flex-wrap: wrap;
@@ -410,7 +430,7 @@ button:focus-visible {
   background: var(--color-accent);
   border-radius: var(--radius);
   bottom: var(--space-5);
-  color: var(--color-bg);
+  color: var(--color-on-accent);
   display: flex;
   font-size: 0.72rem;
   font-weight: 600;
@@ -454,7 +474,7 @@ button:focus-visible {
 
 /* Give the toolkit section clear hierarchy and flexible skill badges. */
 .content-section {
-  border-top: 1px solid rgba(240, 241, 233, 0.12);
+  border-top: 1px solid var(--color-border);
   padding-bottom: var(--space-6);
   padding-top: var(--space-6);
 }
@@ -483,7 +503,7 @@ button:focus-visible {
 .skills-grid li {
   align-items: center;
   background: var(--color-surface);
-  border: 1px solid rgba(240, 241, 233, 0.12);
+  border: 1px solid var(--color-border);
   border-radius: 999px;
   display: inline-flex;
   gap: var(--space-2);
@@ -529,7 +549,7 @@ button:focus-visible {
 
 .project-card {
   background: var(--color-bg);
-  border: 1px solid rgba(240, 241, 233, 0.1);
+  border: 1px solid var(--color-border);
   border-radius: var(--radius);
   min-width: 0;
   overflow: hidden;
@@ -704,7 +724,7 @@ button:focus-visible {
 }
 
 .project-card > a {
-  border-bottom: 1px solid rgba(240, 241, 233, 0.15);
+  border-bottom: 1px solid var(--color-border);
   display: flex;
   font-size: 0.72rem;
   justify-content: space-between;
@@ -714,7 +734,7 @@ button:focus-visible {
 
 /* Align contact details and footer content with the page container. */
 .contact-section {
-  border-top: 1px solid rgba(240, 241, 233, 0.12);
+  border-top: 1px solid var(--color-border);
   display: grid;
   gap: var(--space-4);
   grid-template-columns: minmax(0, 1fr);
@@ -749,7 +769,7 @@ button:focus-visible {
 }
 
 .contact-socials {
-  border-top: 1px solid rgba(240, 241, 233, 0.12);
+  border-top: 1px solid var(--color-border);
   display: flex;
   flex-direction: column;
   font-size: 0.7rem;
@@ -768,7 +788,7 @@ button:focus-visible {
   border-radius: 999px;
   bottom: var(--space-3);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
-  color: var(--color-bg);
+  color: var(--color-on-accent);
   display: flex;
   font-size: 0.58rem;
   font-weight: 700;
@@ -782,7 +802,7 @@ button:focus-visible {
 
 .whatsapp-float:hover {
   background: var(--color-text);
-  color: var(--color-bg);
+  color: var(--color-on-accent);
   transform: translateY(-2px);
 }
 
@@ -799,7 +819,7 @@ button:focus-visible {
 
 .site-footer {
   align-items: flex-start;
-  border-top: 1px solid rgba(240, 241, 233, 0.12);
+  border-top: 1px solid var(--color-border);
   color: var(--color-muted);
   display: flex;
   flex-wrap: wrap;
@@ -1006,12 +1026,33 @@ button:focus-visible {
   }
 }
 
-/* Respect visitors who prefer reduced animation. */
+/* Use the dark palette when the visitor prefers a dark appearance. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --color-bg: #111713;
+    --color-surface: #1a231c;
+    --color-text: #f0f1e9;
+    --color-muted: #a4ada1;
+    --color-accent: #c3f36b;
+    --color-on-accent: #111713;
+    --color-border: rgba(240, 241, 233, 0.2);
+  }
+}
+
+/* Disable motion for visitors who request reduced animation. */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
   *::after {
     scroll-behavior: auto !important;
-    transition-duration: 0.01ms !important;
+    transition: none !important;
+    animation: none !important;
+  }
+
+  .project-card:hover,
+  .image-frame:hover img,
+  .whatsapp-float:hover {
+    transform: none;
   }
 }
