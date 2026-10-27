@@ -145,6 +145,7 @@ button:focus-visible {
   background: var(--color-bg);
   border-bottom: 1px solid var(--color-border);
   display: flex;
+  gap: var(--space-3);
   height: 4.5rem;
   justify-content: space-between;
   padding: 0 var(--space-3);
@@ -162,20 +163,28 @@ button:focus-visible {
   font-weight: 700;
   gap: var(--space-2);
   letter-spacing: 0.1em;
+  margin-left: auto;
+  order: 3;
 }
 
 .brand-mark {
   align-items: center;
   background: var(--color-accent);
-  border-radius: 50%;
+  border-radius: 0.65rem;
   color: var(--color-on-accent);
   display: inline-flex;
   flex-shrink: 0;
-  font-size: 1.05rem;
-  height: 2.35rem;
+  font-size: 0.72rem;
+  height: 2.75rem;
   justify-content: center;
-  letter-spacing: -0.07em;
-  width: 2.35rem;
+  letter-spacing: 0.04em;
+  width: 2.75rem;
+}
+
+.brand-name {
+  color: var(--color-text);
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
 }
 
 .brand-muted {
@@ -193,6 +202,7 @@ button:focus-visible {
   display: flex;
   font-size: 0.75rem;
   gap: var(--space-2);
+  order: 1;
   padding: var(--space-2) 0;
 }
 
@@ -228,6 +238,7 @@ button:focus-visible {
   gap: 0;
   left: 0;
   opacity: 0;
+  order: 2;
   padding: 0 var(--space-3);
   pointer-events: none;
   position: absolute;
@@ -240,6 +251,7 @@ button:focus-visible {
 
 .site-nav.is-open {
   opacity: 1;
+  order: 2;
   padding-bottom: var(--space-3);
   padding-top: var(--space-2);
   pointer-events: auto;
@@ -851,6 +863,7 @@ button:focus-visible {
 }
 
 .site-footer .brand-mark {
+  border-radius: 50%;
   font-size: 0.85rem;
   height: 1.8rem;
   width: 1.8rem;
@@ -905,6 +918,7 @@ button:focus-visible {
     position: static;
     transform: none;
     visibility: visible;
+    margin-left: auto;
   }
 
   .site-nav > a:not(.nav-contact) {
@@ -914,6 +928,11 @@ button:focus-visible {
 
   .nav-contact {
     margin: 0;
+  }
+
+  .brand {
+    margin-left: var(--space-3);
+    order: 3;
   }
 
   .section-wrap {
@@ -1138,6 +1157,13 @@ button:focus-visible {
   position: fixed;
   right: var(--space-3);
   z-index: 15;
+}
+
+/* Anchor the home-page WhatsApp menu within the hero instead of the viewport. */
+.hero .whatsapp-widget {
+  bottom: var(--space-5);
+  position: absolute;
+  right: var(--space-3);
 }
 
 .whatsapp-float {

@@ -20,8 +20,8 @@
     <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="site-header">
       <a class="brand" href="index.html" aria-label="Oluwatobi Olatunji home">
-        <span class="brand-mark">T.</span>
-        <span>TOBY<span class="brand-muted">VIV221</span></span>
+        <span class="brand-mark" aria-hidden="true">MTI</span>
+        <span class="brand-name">MR T INITIATIVES</span>
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
         <span class="menu-toggle-label">Menu</span>
@@ -51,8 +51,8 @@
           </div>
           <div class="hero-social">
             <span>FIND ME HERE</span>
-            <a href="https://github.com/Jumoke2020" target="_blank" rel="noreferrer">GITHUB ↗</a>
-            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LINKEDIN ↗</a>
+            <a href="https://github.com/Jumoke2020" target="_blank" rel="noreferrer" aria-label="GitHub profile (opens in a new tab)">GITHUB ↗</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn (opens in a new tab)">LINKEDIN ↗</a>
           </div>
         </div>
         <div class="hero-visual">
@@ -65,10 +65,14 @@
               width="1200" height="800" fetchpriority="high" decoding="async">
             <img class="slider-image"
               src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&amp;fit=crop&amp;w=1200&amp;q=85"
+              srcset="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&amp;fit=crop&amp;w=640&amp;q=80 640w, https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&amp;fit=crop&amp;w=960&amp;q=80 960w, https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&amp;fit=crop&amp;w=1200&amp;q=85 1200w"
+              sizes="(min-width: 1100px) 480px, (min-width: 768px) 42vw, calc(100vw - 2rem)"
               alt="Developers collaborating around a laptop in a bright workspace"
               width="1200" height="800" loading="lazy" decoding="async" aria-hidden="true">
             <img class="slider-image"
               src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&amp;fit=crop&amp;w=1200&amp;q=85"
+              srcset="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&amp;fit=crop&amp;w=640&amp;q=80 640w, https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&amp;fit=crop&amp;w=960&amp;q=80 960w, https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&amp;fit=crop&amp;w=1200&amp;q=85 1200w"
+              sizes="(min-width: 1100px) 480px, (min-width: 768px) 42vw, calc(100vw - 2rem)"
               alt="A team working together on a digital project"
               width="1200" height="800" loading="lazy" decoding="async" aria-hidden="true">
             <div class="image-caption">
@@ -84,18 +88,17 @@
           <div class="floating-note"><span class="note-icon">✳</span><span>Curious mind.<br>Thoughtful work.</span></div>
         </div>
         <a class="scroll-cue" href="about.html"><span class="scroll-line"></span> MORE ABOUT ME</a>
+        <div class="whatsapp-widget">
+          <button class="whatsapp-float" type="button" aria-label="Choose a WhatsApp number" aria-expanded="false" aria-controls="whatsapp-options">
+            <span class="whatsapp-icon" aria-hidden="true">↗</span><span>LET'S CHAT</span>
+          </button>
+          <div class="whatsapp-options" id="whatsapp-options" hidden>
+            <a href="https://wa.me/2348133922041" target="_blank" rel="noreferrer">WhatsApp · +234 8133922041</a>
+            <a href="https://wa.me/2348161806447" target="_blank" rel="noreferrer">WhatsApp · +234 8161806447</a>
+          </div>
+        </div>
       </section>
     </main>
-
-    <div class="whatsapp-widget">
-      <button class="whatsapp-float" type="button" aria-expanded="false" aria-controls="whatsapp-options">
-        <span class="whatsapp-icon" aria-hidden="true">↗</span><span>LET'S CHAT</span>
-      </button>
-      <div class="whatsapp-options" id="whatsapp-options" hidden>
-        <a href="https://wa.me/2348133922041" target="_blank" rel="noreferrer">WhatsApp · +234 8133922041</a>
-        <a href="https://wa.me/2348161806447" target="_blank" rel="noreferrer">WhatsApp · +234 8161806447</a>
-      </div>
-    </div>
 
     <footer class="site-footer">
       <a class="brand" href="index.html"><span class="brand-mark">T.</span><span>OLUWATOBI OLATUNJI</span></a>
